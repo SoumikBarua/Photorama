@@ -37,7 +37,10 @@ class PhotoStore {
             (data, response, error) -> Void in
             
             let httpResponse = response as? HTTPURLResponse
-            print("Status code: \(httpResponse!.statusCode) and header fields: \(httpResponse!.allHeaderFields)")
+            print("Status code: \(httpResponse!.statusCode)")
+            for (key, value) in httpResponse!.allHeaderFields {
+                print("\(key) : \(value)")
+            }
             
             let result = self.processPhotosRequest(data: data, error: error)
             OperationQueue.main.addOperation {
@@ -64,7 +67,10 @@ class PhotoStore {
             (data, response, error) -> Void in
             
             let httpResponse = response as? HTTPURLResponse
-            print("Status code: \(httpResponse!.statusCode) and header fields: \(httpResponse!.allHeaderFields)")
+            print("Status code: \(httpResponse!.statusCode)")
+            for (key, value) in httpResponse!.allHeaderFields {
+                print("\(key) : \(value)")
+            }
             
             let result = self.processImageRequest(data: data, error: error)
             OperationQueue.main.addOperation {
