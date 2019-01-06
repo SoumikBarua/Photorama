@@ -18,6 +18,7 @@
 		32BD698721DE951400B7593B /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD698621DE951400B7593B /* PhotoStore.swift */; };
 		32BD698921DE9B6500B7593B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD698821DE9B6500B7593B /* Photo.swift */; };
 		32C78BB121E18C01004D4366 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C78BB021E18C01004D4366 /* PhotoDataSource.swift */; };
+		32C78BB321E19227004D4366 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C78BB221E19227004D4366 /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		32BD698621DE951400B7593B /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		32BD698821DE9B6500B7593B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		32C78BB021E18C01004D4366 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		32C78BB221E19227004D4366 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				32BD698621DE951400B7593B /* PhotoStore.swift */,
 				32BD698821DE9B6500B7593B /* Photo.swift */,
 				32C78BB021E18C01004D4366 /* PhotoDataSource.swift */,
+				32C78BB221E19227004D4366 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				325DFFF721DD66B7002D7C28 /* PhotosViewController.swift in Sources */,
 				32BD698721DE951400B7593B /* PhotoStore.swift in Sources */,
 				32C78BB121E18C01004D4366 /* PhotoDataSource.swift in Sources */,
+				32C78BB321E19227004D4366 /* PhotoCollectionViewCell.swift in Sources */,
 				325DFFC921DD6691002D7C28 /* AppDelegate.swift in Sources */,
 				32BD698921DE9B6500B7593B /* Photo.swift in Sources */,
 			);
