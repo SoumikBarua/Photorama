@@ -55,6 +55,7 @@
                                         <connections>
                                             <outlet property="imageView" destination="j31-0O-beb" id="3uM-9u-bIR"/>
                                             <outlet property="spinner" destination="Hz4-o6-zda" id="i98-wh-sTN"/>
+                                            <segue destination="oO0-Qv-Dxo" kind="show" identifier="showPhoto" id="wxY-Ju-d1A"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -77,6 +78,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="905" y="-564"/>
+        </scene>
+        <!--Photo Info View Controller-->
+        <scene sceneID="RMS-ns-MAI">
+            <objects>
+                <viewController id="oO0-Qv-Dxo" customClass="PhotoInfoViewController" customModule="Photorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8EB-s1-VvU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUi-9D-Afp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NUi-9D-Afp" firstAttribute="trailing" secondItem="JyX-nx-QQn" secondAttribute="trailing" id="QPA-zu-SnX"/>
+                            <constraint firstItem="NUi-9D-Afp" firstAttribute="leading" secondItem="JyX-nx-QQn" secondAttribute="leading" id="ekA-5P-fhq"/>
+                            <constraint firstItem="NUi-9D-Afp" firstAttribute="bottom" secondItem="JyX-nx-QQn" secondAttribute="bottom" id="qrZ-8H-R5x"/>
+                            <constraint firstItem="NUi-9D-Afp" firstAttribute="top" secondItem="JyX-nx-QQn" secondAttribute="top" id="ybo-jm-OCK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JyX-nx-QQn"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="NUi-9D-Afp" id="Z9F-CA-yoP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p53-9k-45x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="-564"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jeK-bQ-7Aw">
