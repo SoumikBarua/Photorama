@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotosViewController: UIViewController, UICollectionViewDelegate {
+class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -75,6 +75,17 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate {
         default:
             preconditionFailure("Unexpected segue identifier.")
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth: CGFloat = view.bounds.width
+        let minInterItemSpacing: CGFloat = 2
+        let leftInsetSpacing: CGFloat = 2
+        let rightInsetSpacing: CGFloat = 2
+        let availableWidth: CGFloat = (screenWidth - leftInsetSpacing - rightInsetSpacing - (minInterItemSpacing*3))/4
+        print("screenwidth: \(screenWidth) availableWidth: \(availableWidth) ")
+        let itemSize = CGSize(width: availableWidth, height: availableWidth)
+        return itemSize
     }
     
 }
