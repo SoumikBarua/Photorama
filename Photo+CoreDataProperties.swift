@@ -1,4 +1,4 @@
-//
+                                                                                                                              //
 //  Photo+CoreDataProperties.swift
 //  Photorama
 //
