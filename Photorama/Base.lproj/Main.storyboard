@@ -88,14 +88,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUi-9D-Afp">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnJ-q3-HXr">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Tags" id="ZkF-BP-BaS"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="NnJ-q3-HXr" firstAttribute="trailing" secondItem="JyX-nx-QQn" secondAttribute="trailing" id="4zn-io-Nx9"/>
+                            <constraint firstItem="NnJ-q3-HXr" firstAttribute="leading" secondItem="JyX-nx-QQn" secondAttribute="leading" id="8F7-CA-HuE"/>
                             <constraint firstItem="NUi-9D-Afp" firstAttribute="trailing" secondItem="JyX-nx-QQn" secondAttribute="trailing" id="QPA-zu-SnX"/>
+                            <constraint firstItem="NnJ-q3-HXr" firstAttribute="top" secondItem="NUi-9D-Afp" secondAttribute="bottom" id="Z4A-Sy-HEO"/>
+                            <constraint firstItem="NnJ-q3-HXr" firstAttribute="bottom" secondItem="JyX-nx-QQn" secondAttribute="bottom" id="cT5-gX-16c"/>
                             <constraint firstItem="NUi-9D-Afp" firstAttribute="leading" secondItem="JyX-nx-QQn" secondAttribute="leading" id="ekA-5P-fhq"/>
-                            <constraint firstItem="NUi-9D-Afp" firstAttribute="bottom" secondItem="JyX-nx-QQn" secondAttribute="bottom" id="qrZ-8H-R5x"/>
                             <constraint firstItem="NUi-9D-Afp" firstAttribute="top" secondItem="JyX-nx-QQn" secondAttribute="top" id="ybo-jm-OCK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JyX-nx-QQn"/>
@@ -106,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p53-9k-45x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="-564"/>
+            <point key="canvasLocation" x="1653.5999999999999" y="-564.46776611694156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jeK-bQ-7Aw">
