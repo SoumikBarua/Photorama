@@ -23,6 +23,8 @@ class PhotoInfoViewController: UIViewController {
         
         super.viewDidLoad()
         
+        imageView.accessibilityLabel = photo.title
+        
         store.fetchImage(for: photo) { (result) -> Void in
             switch result {
             case let .success(image):
