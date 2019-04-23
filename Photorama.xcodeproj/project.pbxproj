@@ -226,13 +226,16 @@
 				TargetAttributes = {
 					325DFFC421DD6691002D7C28 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					325DFFD821DD6692002D7C28 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 325DFFC421DD6691002D7C28;
 					};
 					325DFFE321DD6692002D7C28 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 325DFFC421DD6691002D7C28;
 					};
 				};
@@ -482,7 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sb.Photorama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -499,7 +502,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sb.Photorama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -518,7 +521,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sb.PhotoramaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photorama.app/Photorama";
 			};
@@ -538,7 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sb.PhotoramaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photorama.app/Photorama";
 			};
@@ -557,7 +560,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sb.PhotoramaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Photorama;
 			};
@@ -576,7 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sb.PhotoramaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Photorama;
 			};

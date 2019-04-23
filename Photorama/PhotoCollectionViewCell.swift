@@ -35,7 +35,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     
     override var accessibilityTraits: UIAccessibilityTraits {
         get {
-            return super.accessibilityTraits | UIAccessibilityTraitImage
+            return UIAccessibilityTraits(rawValue: super.accessibilityTraits.rawValue | UIAccessibilityTraits.image.rawValue)
         }
         set {
             // Ignore attempts to set
