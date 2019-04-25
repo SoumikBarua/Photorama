@@ -15,15 +15,15 @@ This GIF shows the app in action.
 
 ## Lessons Learned
 1. Web service requests can be done with URL and key-value pairs that are part of the URL's format are called *query items*.
-2. Enumerations can have raw values associated with them, which can be of any type like **Int** or **String**.
+2. Enumerations can have raw values associated with them, which can be strings, integer or floating point numbers, and characters.
 3. To declare a type-level property or a method in structs, use the **static** keyword. Classes may also use the **class** keyword for type properties and methods.
 4. The default level of access control for properties and methods is **internal**. Going from least restrictive to most restrictive, the levels are: **open**, **public**, **internal**, **fileprivate**, and **private**.
 5. Computed properties calculate a value instead of storing it. They provide a getter and an optional setter. 
 6. **URLRequest** contains the information needed for the web service request. An instance of **URLRequest** can be created with an **URL** object, which in turn can be properly formatted with the help of an **URLComponents** instance.
 7. **URLSessionTask** is an abstract class that is responsible for the actual work of communicating with a server. The three types of concrete session tasks are: **URLSessionDataTask** for retrieving data and returning it as **Data** in memory, **URLSessionDownloadTask** for downloading files and **URLSessionUploadTask** for uploading files. To start a task, **.resume()** needs to be called as all tasks are created in a suspended state.
 8. **URLSession** serves as a factory for **URLSessionTask** instances. An instance of **URLSession** can create multiple tasks with common properties defined by it's configuration.
-9. In JSON documents, curley braces ( { and } ) denote a dictionary while square brackets ( [ and  ] ) denote an array.
-10. Enumerations can also have associated values. Associated values in enums can be a great way to handle an operation's, such as a web service request, success or failure; the success case can have data following a successful execution and the failure case can have error info tied to it.
+9. In JSON documents, curly braces ( { and } ) denote a dictionary while square brackets ( [ and  ] ) denote an array.
+10. Enumerations can also have associated values. Associated values in enums can be a great way to handle an operation's, such as a web service request, success or failure; the success case can have data following a successful execution and the failure case can have error info tied to it. Unlike raw values, associated values can be of any type.
 11. It is a good idea to add a completion closure with the **@escaping** annotation to the method where the web service request is taking place. Since getting data from the request will be asynchronous, the closure will be called once the particular instance of **URLSessionTask** completes the request.
 12. A **URLSessionDataTask** will run it's completion handler on the background thread. To run any instructions inside the completion handler on the main thread, use **OperationQueue.main.addOperation(_:)** and place such instructions inside it.
 13. To refactor the **UICollectionView** and **UITableView** data source methods to a separate class, the class must conform to **NSObjectProtocol** on top of conforming to the respective data source protocol.
