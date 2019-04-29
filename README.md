@@ -4,7 +4,7 @@ This is an iOS app that reads in a list of interesting photos from Flickr using 
 
 ## Getting Started
 
-This project was created to learn how to make web service requests using **URLSession**, parse JSON data using **JSONSerialization** and implement data persistence using **Core Data** framework. This project also allowed an opportunity to practice implementing segues. 
+This project was created to learn how to make web service requests using **URLSession**, parse JSON data using **JSONSerialization**, implement data persistence using **Core Data** framework and how to present content using **UICollectionView**. This project also allowed an opportunity to practice implementing segues. 
 
 ## App Walkthrough GIF
 
