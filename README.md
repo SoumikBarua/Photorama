@@ -40,3 +40,19 @@ This GIF shows the app in action.
 24. A **NSPredicate** object can contain a condition that can be true or false. Such a predicate can be added to a **NSFetchRequest** instance via it's **predicate** property to check if an entity matches a specific criteria.
 25. In **Core Data**, entities can have two kinds of relationships: *to-one* and *to-many*. In a *to-many* relationship, an instance of one entity has a reference to a **Set** containing instances of the other entity. Two entities can have a bidirectional relationship with each other, called an *inverse* relationship.
 26. Instead of using the **viewContext** of **NSPersistentContainer**, use **performBackgroundTask(_:)** to run expensive operations on the background and avoid blocking the main queue.
+
+## License
+
+    Copyright 2019 Soumik Barua
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
